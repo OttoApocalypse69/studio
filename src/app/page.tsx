@@ -23,11 +23,7 @@ export default function Home() {
                 Browse Our Blunders <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button size="lg" variant="outline" asChild className="font-inter">
-              <Link href="/contact">
-                Complain Here
-              </Link>
-            </Button>
+            {/* "Complain Here" Button Removed */}
           </div>
         </div>
       </section>
@@ -99,13 +95,12 @@ export default function Home() {
             Got a Terrible Idea?
           </h2>
           <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-8">
-            If your project is doomed from the start, we&apos;re probably the right (or wrong) people for the job. Or don&apos;t contact us. We&apos;re probably napping.
+            If your project is doomed from the start, we&apos;re probably the right (or wrong) people for the job. Or don&apos;t contact us. We&apos;re probably napping. This section is purely decorative now.
           </p>
-          <Button size="lg" asChild className="font-inter">
-            <Link href="/contact">
-              Send Your Regrets <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-          </Button>
+          {/* "Send Your Regrets" Button Removed
+            Optionally, could link to projects or another page instead.
+            For now, keeping the text but removing the button.
+           */}
         </div>
       </section>
     </div>

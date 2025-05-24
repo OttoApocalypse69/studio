@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { Menu, X, Briefcase, Download, PlaySquare, UserCircle, Feather } from 'lucide-react';
+import { Menu, Briefcase, Download, PlaySquare, Feather } from 'lucide-react'; // Removed UserCircle
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
@@ -13,10 +13,7 @@ const navItems = [
   { href: '/youtube', label: 'YouTube', icon: PlaySquare },
 ];
 
-const authItems = [
-  { href: '/login', label: 'Login' },
-  { href: '/signup', label: 'Sign Up' },
-];
+// Auth items removed
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -42,16 +39,7 @@ export default function Navbar() {
                 {item.label}
               </Link>
             ))}
-            <div className="flex items-center space-x-2">
-              {authItems.map((item) => (
-                 <Button key={item.label} variant={item.label === 'Sign Up' ? "default" : "outline"} size="sm" asChild>
-                    <Link href={item.href} className="font-inter">
-                      {item.label === 'Login' && <UserCircle className="mr-2 h-4 w-4" />}
-                      {item.label}
-                    </Link>
-                 </Button>
-              ))}
-            </div>
+            {/* Auth items buttons removed */}
           </nav>
 
           {/* Mobile Navigation Trigger */}
@@ -80,15 +68,7 @@ export default function Navbar() {
                       <span>{item.label}</span>
                     </Link>
                   ))}
-                  <hr className="border-border my-4" />
-                  {authItems.map((item) => (
-                    <Button key={item.label} variant={item.label === 'Sign Up' ? "default" : "outline"} className="w-full justify-start" asChild onClick={() => setMobileMenuOpen(false)}>
-                        <Link href={item.href} className="font-inter text-lg">
-                          {item.label === 'Login' && <UserCircle className="mr-2 h-5 w-5" />}
-                          {item.label}
-                        </Link>
-                    </Button>
-                  ))}
+                  {/* Auth items buttons removed from mobile menu */}
                 </div>
               </SheetContent>
             </Sheet>

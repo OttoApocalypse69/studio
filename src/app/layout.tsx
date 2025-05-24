@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${lora.variable}`}>
+    <html lang="en" className={`dark ${inter.variable} ${lora.variable}`}>
       <body className="antialiased font-lora">
         <div className="flex flex-col min-h-screen">
           <Navbar />
