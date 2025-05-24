@@ -21,8 +21,8 @@ import { useToast } from '@/hooks/use-toast';
 import { Mail, Lock } from 'lucide-react';
 
 const formSchema = z.object({
-  email: z.string().email({ message: 'Invalid email address.' }),
-  password: z.string().min(6, { message: 'Password must be at least 6 characters.' }),
+  email: z.string().email({ message: 'Invalid email address. Or is it?' }),
+  password: z.string().min(6, { message: 'Password must be at least 6 characters. Or we pretend it is.' }),
 });
 
 export default function LoginForm() {
@@ -39,16 +39,16 @@ export default function LoginForm() {
     // Placeholder for login logic
     console.log(values);
     toast({
-      title: 'Login Attempted',
-      description: 'Login functionality is not implemented yet.',
+      title: 'Login "Attempted"',
+      description: 'Login functionality is a myth here. But thanks for trying!',
     });
   }
 
   return (
     <Card className="w-full max-w-md mx-auto shadow-xl">
       <CardHeader className="text-center">
-        <CardTitle className="text-3xl font-inter text-primary">Welcome Back!</CardTitle>
-        <CardDescription className="font-lora">Sign in to access your LutySpace account.</CardDescription>
+        <CardTitle className="text-3xl font-inter text-primary">Oh, It&apos;s You Again.</CardTitle>
+        <CardDescription className="font-lora">Sign in to your Luty-Web account. We&apos;re surprised you have one.</CardDescription>
       </CardHeader>
       <CardContent>
         <Form {...form}>
@@ -62,7 +62,7 @@ export default function LoginForm() {
                   <div className="relative">
                     <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
                     <FormControl>
-                      <Input placeholder="you@example.com" {...field} className="pl-10 font-lora" />
+                      <Input placeholder="you@example.com (probably)" {...field} className="pl-10 font-lora" />
                     </FormControl>
                   </div>
                   <FormMessage />
@@ -78,7 +78,7 @@ export default function LoginForm() {
                    <div className="relative">
                     <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
                     <FormControl>
-                      <Input type="password" placeholder="••••••••" {...field} className="pl-10 font-lora" />
+                      <Input type="password" placeholder="•••••••• (good luck remembering)" {...field} className="pl-10 font-lora" />
                     </FormControl>
                   </div>
                   <FormMessage />
@@ -86,19 +86,19 @@ export default function LoginForm() {
               )}
             />
             <Button type="submit" className="w-full font-inter text-base py-3">
-              Log In
+              Attempt Log In
             </Button>
           </form>
         </Form>
       </CardContent>
       <CardFooter className="flex flex-col items-center space-y-2">
         <Link href="#" className="text-sm text-primary hover:underline font-inter">
-            Forgot password?
+            Forgot password? (Join the club)
         </Link>
         <p className="text-sm text-muted-foreground font-lora">
           Don&apos;t have an account?{' '}
           <Link href="/signup" className="font-semibold text-primary hover:underline font-inter">
-            Sign up
+            Make a terrible decision
           </Link>
         </p>
       </CardFooter>

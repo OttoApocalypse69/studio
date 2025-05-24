@@ -21,12 +21,12 @@ import { useToast } from '@/hooks/use-toast';
 import { User, Mail, Lock } from 'lucide-react';
 
 const formSchema = z.object({
-  fullName: z.string().min(2, { message: 'Full name must be at least 2 characters.' }),
-  email: z.string().email({ message: 'Invalid email address.' }),
-  password: z.string().min(6, { message: 'Password must be at least 6 characters.' }),
+  fullName: z.string().min(2, { message: 'Full name must be at least 2 characters. Or so they say.' }),
+  email: z.string().email({ message: 'That email looks suspicious. Like everything else here.' }),
+  password: z.string().min(6, { message: 'Password needs 6+ characters. For "security".' }),
   confirmPassword: z.string(),
 }).refine(data => data.password === data.confirmPassword, {
-  message: "Passwords don't match",
+  message: "Passwords don't match. Shocking.",
   path: ["confirmPassword"], // path of error
 });
 
@@ -46,16 +46,16 @@ export default function SignupForm() {
     // Placeholder for signup logic
     console.log(values);
     toast({
-      title: 'Signup Attempted',
-      description: 'Signup functionality is not implemented yet.',
+      title: 'Signup "Attempted"',
+      description: 'Account creation is also a beautiful dream. Welcome to the void!',
     });
   }
 
   return (
     <Card className="w-full max-w-md mx-auto shadow-xl">
       <CardHeader className="text-center">
-        <CardTitle className="text-3xl font-inter text-primary">Create an Account</CardTitle>
-        <CardDescription className="font-lora">Join LutySpace to get started.</CardDescription>
+        <CardTitle className="text-3xl font-inter text-primary">Create an Account (Why?)</CardTitle>
+        <CardDescription className="font-lora">Join Luty-Web. Consider this your final warning.</CardDescription>
       </CardHeader>
       <CardContent>
         <Form {...form}>
@@ -69,7 +69,7 @@ export default function SignupForm() {
                    <div className="relative">
                     <User className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
                     <FormControl>
-                      <Input placeholder="John Doe" {...field} className="pl-10 font-lora" />
+                      <Input placeholder="John Doe (or your preferred alias)" {...field} className="pl-10 font-lora" />
                     </FormControl>
                   </div>
                   <FormMessage />
@@ -85,7 +85,7 @@ export default function SignupForm() {
                   <div className="relative">
                     <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
                     <FormControl>
-                      <Input placeholder="you@example.com" {...field} className="pl-10 font-lora" />
+                      <Input placeholder="your.void@example.com" {...field} className="pl-10 font-lora" />
                     </FormControl>
                   </div>
                   <FormMessage />
@@ -101,7 +101,7 @@ export default function SignupForm() {
                   <div className="relative">
                     <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
                     <FormControl>
-                      <Input type="password" placeholder="••••••••" {...field} className="pl-10 font-lora" />
+                      <Input type="password" placeholder="•••••••• (make it forgettable)" {...field} className="pl-10 font-lora" />
                     </FormControl>
                   </div>
                   <FormMessage />
@@ -113,11 +113,11 @@ export default function SignupForm() {
               name="confirmPassword"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="font-inter">Confirm Password</FormLabel>
+                  <FormLabel className="font-inter">Confirm Password (If You Must)</FormLabel>
                    <div className="relative">
                     <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
                     <FormControl>
-                      <Input type="password" placeholder="••••••••" {...field} className="pl-10 font-lora" />
+                      <Input type="password" placeholder="•••••••• (try to match, maybe?)" {...field} className="pl-10 font-lora" />
                     </FormControl>
                   </div>
                   <FormMessage />
@@ -125,16 +125,16 @@ export default function SignupForm() {
               )}
             />
             <Button type="submit" className="w-full font-inter text-base py-3">
-              Sign Up
+              Sign Up (Regret Later)
             </Button>
           </form>
         </Form>
       </CardContent>
       <CardFooter className="flex flex-col items-center">
         <p className="text-sm text-muted-foreground font-lora">
-          Already have an account?{' '}
+          Already made this mistake?{' '}
           <Link href="/login" className="font-semibold text-primary hover:underline font-inter">
-            Log in
+            Log in (again?)
           </Link>
         </p>
       </CardFooter>

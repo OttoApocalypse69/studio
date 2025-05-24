@@ -8,20 +8,20 @@ import { Button } from '@/components/ui/button';
 const mockVideos: YouTubeVideo[] = [
   {
     id: 'dQw4w9WgXcQ', // Example: Rick Astley - Never Gonna Give You Up
-    title: 'LutySpace Product Demo',
-    description: 'A walkthrough of our latest product features and capabilities.',
+    title: 'Luty-Web "Product" Demo (Viewer Discretion Advised)',
+    description: 'Watch us try to explain what this thing allegedly does. Popcorn not included, probably for the best.',
     thumbnailUrl: 'https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg',
   },
   {
     id: 'JGwWNGJdvx8', // Example: Creative Commons video
-    title: 'Behind the Scenes at LutySpace',
-    description: 'An inside look at our team culture and development process.',
+    title: 'The Unfiltered Chaos: Luty-Web "Behind the Scenes"',
+    description: 'A terrifying glimpse into how the sausage (or lack thereof) is made. You\'ve been warned.',
     thumbnailUrl: 'https://img.youtube.com/vi/JGwWNGJdvx8/hqdefault.jpg',
   },
   {
     id: 'L1QOh-n-D2o', // Example: Another Creative Commons video
-    title: 'Tutorial: Getting Started with LutySuite',
-    description: 'A step-by-step guide to help you make the most of our productivity suite.',
+    title: 'Tutorial: Attempting to Navigate LutySuite (Good Luck)',
+    description: 'Follow along as we stumble through our own "productivity" suite. May the odds be ever in your favor.',
     thumbnailUrl: 'https://img.youtube.com/vi/L1QOh-n-D2o/hqdefault.jpg',
   },
 ];
@@ -30,13 +30,13 @@ export default function YouTubePage() {
   return (
     <div className="space-y-12">
       <section className="text-center">
-        <h1 className="text-4xl md:text-5xl font-bold font-inter text-primary mb-4">LutySpace on YouTube</h1>
+        <h1 className="text-4xl md:text-5xl font-bold font-inter text-primary mb-4">Luty-Web on YouTube</h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
-          Watch our latest videos, tutorials, and showcases. Subscribe to stay updated!
+          Our YouTube channel: a digital abyss of questionable content. Subscribe if you enjoy mild bewilderment.
         </p>
         <Button asChild className="font-inter bg-red-600 hover:bg-red-700 text-white">
             <a href="https://www.youtube.com/@yourchannelname" target="_blank" rel="noopener noreferrer">
-                <Youtube className="mr-2 h-5 w-5"/> Visit Our Channel
+                <Youtube className="mr-2 h-5 w-5"/> Visit Our Den of Digital Despair
             </a>
         </Button>
       </section>
@@ -61,12 +61,12 @@ export default function YouTubePage() {
                 <CardTitle className="font-inter text-lg line-clamp-2">{video.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="line-clamp-3">{video.description || 'Watch this video on YouTube.'}</CardDescription>
+                <CardDescription className="line-clamp-3">{video.description || 'Stare at this video. Or don\'t.'}</CardDescription>
               </CardContent>
                <CardFooter>
                 <Button asChild variant="link" className="px-0 font-inter">
                   <a href={`https://www.youtube.com/watch?v=${video.id}`} target="_blank" rel="noopener noreferrer">
-                    <PlayCircle className="mr-2 h-4 w-4" /> Watch on YouTube
+                    <PlayCircle className="mr-2 h-4 w-4" /> Waste Time on YouTube
                   </a>
                 </Button>
               </CardFooter>

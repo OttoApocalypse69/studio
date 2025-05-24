@@ -12,7 +12,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <Card className="flex flex-col overflow-hidden h-full_ delete_this_comment_ hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1">
+    <Card className="flex flex-col overflow-hidden h-full hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1">
       <div className="relative w-full h-56">
         <Image
           src={project.imageUrl}
@@ -20,7 +20,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           layout="fill"
           objectFit="cover"
           className="rounded-t-lg"
-          data-ai-hint="technology software"
+          data-ai-hint="technology software mess"
         />
       </div>
       <CardHeader>
@@ -39,13 +39,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       <CardFooter className="flex justify-between items-center">
         <Button asChild variant="default" size="sm" className="font-inter">
           <Link href={`/projects/${project.id}`}>
-            View Details <ArrowRight className="ml-2 h-4 w-4" />
+            View "Details" <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
         </Button>
         {project.projectUrl && (
           <Button asChild variant="outline" size="sm" className="font-inter">
             <a href={project.projectUrl} target="_blank" rel="noopener noreferrer">
-              Live Demo <ExternalLink className="ml-2 h-4 w-4" />
+              "Live" Demo <ExternalLink className="ml-2 h-4 w-4" />
             </a>
           </Button>
         )}

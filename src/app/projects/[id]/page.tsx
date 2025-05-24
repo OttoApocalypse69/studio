@@ -10,58 +10,58 @@ import { ArrowLeft, CalendarDays, ExternalLink, Settings, Users } from 'lucide-r
 const mockProjects: Project[] = [
   {
     id: 'project-alpha',
-    title: 'Alpha Platform Redesign',
-    description: 'A complete overhaul of an enterprise SaaS platform, focusing on UX and modern technology stack.',
-    longDescription: 'The Alpha Platform Redesign project involved a multi-disciplinary team working to enhance user experience, improve performance, and migrate to a microservices architecture. We conducted extensive user research, iterative prototyping, and agile development cycles to deliver a state-of-the-art solution that significantly improved user engagement and operational efficiency. The new platform boasts a modular design, enabling faster feature rollouts and easier maintenance.',
+    title: 'Alpha Platform "Redesign"',
+    description: "Our attempt to 'overhaul' an enterprise SaaS platform. 'Focusing' is a strong word for what we did with UX and 'modern' tech.",
+    longDescription: "The Alpha Platform 'Redesign'. We threw a bunch of people at it to 'enhance' UX and 'improve' performance. Buzzwords like 'microservices', 'user research', 'agile' were definitely uttered. The result? It's... a thing. It has modules. Maintenance is still a nightmare, probably.",
     imageUrl: 'https://placehold.co/800x500/2E3192/FFFFFF.png',
     images: [
       'https://placehold.co/1200x700/2E3192/FFFFFF.png', 
       'https://placehold.co/1200x700/8E44AD/FFFFFF.png',
       'https://placehold.co/1200x700/555555/FFFFFF.png'
     ],
-    projectUrl: '#', // Replace with actual URL
-    tags: ['UI/UX', 'SaaS', 'React', 'Node.js', 'Enterprise Software'],
-    client: 'Alpha Corp',
-    date: 'May 15, 2023',
-    technologies: ['React', 'TypeScript', 'Node.js', 'GraphQL', 'AWS', 'Docker', 'Kubernetes']
+    projectUrl: '#', 
+    tags: ['UX-ish', 'SaaS-maybe', 'React-probably', 'Node.js-perhaps', 'Enterprise Misfire'],
+    client: 'Alpha Corp (they survived)',
+    date: 'May 15, 2023 (a Monday, probably)',
+    technologies: ['React', 'TypeScript', 'Node.js', 'GraphQL', 'AWS', 'Docker', 'Kubernetes', 'Regret']
   },
   {
     id: 'project-beta',
-    title: 'Beta Mobile App',
-    description: 'Cross-platform mobile application for e-commerce, built with React Native for iOS and Android.',
-    longDescription: 'Beta Mobile App is a feature-rich e-commerce application designed to provide a seamless shopping experience. Key features include personalized recommendations, secure payments, and real-time order tracking. Built using React Native, it targets both iOS and Android platforms with a single codebase, reducing development time and costs while ensuring a native look and feel.',
+    title: 'Beta Mobile "App"',
+    description: 'A mobile app for e-commerce. It exists. Allegedly cross-platform. Built with code and regret.',
+    longDescription: "Beta Mobile App: an e-commerce app with 'features'. We aimed for 'seamless', landed somewhere near 'occasionally functional'. It has 'recommendations' (good luck with those), 'payments' (cross your fingers), and 'tracking' (mostly). React Native means we only had to write the bugs once for both platforms.",
     imageUrl: 'https://placehold.co/800x500/8E44AD/FFFFFF.png',
     images: [
         'https://placehold.co/1200x700/8E44AD/FFFFFF.png',
         'https://placehold.co/1200x700/2E3192/FFFFFF.png'
     ],
-    tags: ['Mobile App', 'E-commerce', 'React Native'],
-    client: 'Beta Retail',
-    date: 'November 20, 2022',
-    technologies: ['React Native', 'Firebase', 'Stripe API', 'Redux', 'JavaScript']
+    tags: ['Mobile-ish App', 'E-commerce-adjacent', 'React Native (somehow)'],
+    client: 'Beta Retail (still in business, surprisingly)',
+    date: 'November 20, 2022 (or thereabouts)',
+    technologies: ['React Native', 'Firebase', 'Stripe API', 'Redux', 'JavaScript', 'Hope (misplaced)']
   },
    {
     id: 'project-gamma',
-    title: 'Gamma Analytics Dashboard',
-    description: 'Data visualization dashboard for business intelligence, providing real-time insights and reporting.',
-    longDescription: 'The Gamma Analytics Dashboard empowers businesses with actionable insights through intuitive data visualizations. It connects to multiple data sources, processes information in real-time, and offers customizable reports and alerts. Built with D3.js and a Python backend.',
+    title: 'Gamma Analytics "Dashboard"',
+    description: "A dashboard that shows data. Sometimes it's even real-time. 'Insights' and 'intelligence' sold separately.",
+    longDescription: "Gamma Analytics Dashboard: it shows charts. 'Empowers' and 'actionable insights' are what the marketing team wanted. It connects to stuff, processes things, and you can customize reports, if you're patient. D3.js and Python were involved, for better or worse.",
     imageUrl: 'https://placehold.co/800x500/555555/FFFFFF.png',
     projectUrl: '#',
-    tags: ['Data Viz', 'BI', 'D3.js', 'Python'],
-    client: 'Gamma Insights',
-    date: 'January 10, 2024',
-    technologies: ['D3.js', 'Python (Flask)', 'PostgreSQL', 'Docker', 'JavaScript']
+    tags: ['Data-ish Viz', 'BI-curious', 'D3.js (we think)', 'Python (allegedly)'],
+    client: 'Gamma Insights (or lack thereof)',
+    date: 'January 10, 2024 (a bleak day)',
+    technologies: ['D3.js', 'Python (Flask)', 'PostgreSQL', 'Docker', 'JavaScript', 'Caffeine']
   },
   {
     id: 'project-delta',
-    title: 'Delta IoT Solution',
-    description: 'An end-to-end IoT platform for smart home devices, enabling remote control and automation.',
+    title: 'Delta IoT "Solution"',
+    description: "An IoT platform for when you want your smart home to be a little dumber. Remote control? Maybe. Automation? If it feels like it.",
     imageUrl: 'https://placehold.co/800x500/2E3192/DDDDDD.png',
-    longDescription: 'Delta IoT solution provides a robust and scalable platform for managing and interacting with smart home devices. It features secure communication, rule-based automation, and a user-friendly mobile interface for device control and monitoring.',
-    tags: ['IoT', 'Smart Home', 'MQTT', 'Embedded Systems'],
-    client: 'Delta Innovations',
-    date: 'March 05, 2023',
-    technologies: ['MQTT', 'Node-RED', 'Raspberry Pi', 'Python', 'Vue.js']
+    longDescription: "Delta IoT: our take on 'smart' home tech. 'Robust' and 'scalable' sound good, right? It's got 'security' (wink), 'rules' (that sometimes work), and an interface that's... there. For controlling things. Or trying to.",
+    tags: ['IoT-ish', 'Smart-ish Home', 'MQTT (maybe)', 'Embedded Nightmares'],
+    client: 'Delta Innovations (questionable name)',
+    date: 'March 05, 2023 (another day, another dollar... not really)',
+    technologies: ['MQTT', 'Node-RED', 'Raspberry Pi', 'Python', 'Vue.js', 'Duct Tape']
   },
 ];
 
@@ -76,11 +76,11 @@ export default async function ProjectDetailPage({ params }: { params: { id: stri
   if (!project) {
     return (
       <div className="text-center py-10">
-        <h1 className="text-2xl font-bold font-inter">Project Not Found</h1>
-        <p className="text-muted-foreground">The project you are looking for does not exist.</p>
+        <h1 className="text-2xl font-bold font-inter">Project Not Found (Or We Lost It)</h1>
+        <p className="text-muted-foreground">The project you are looking for does not exist. Or maybe it never did. Who knows?</p>
         <Button asChild className="mt-4 font-inter">
           <Link href="/projects">
-            <ArrowLeft className="mr-2 h-4 w-4" /> Back to Projects
+            <ArrowLeft className="mr-2 h-4 w-4" /> Back to More Disappointments
           </Link>
         </Button>
       </div>
@@ -91,7 +91,7 @@ export default async function ProjectDetailPage({ params }: { params: { id: stri
     <div className="space-y-12">
       <Button asChild variant="outline" className="mb-8 font-inter">
         <Link href="/projects">
-          <ArrowLeft className="mr-2 h-4 w-4" /> Back to Projects
+          <ArrowLeft className="mr-2 h-4 w-4" /> Back to the Pile
         </Link>
       </Button>
 
@@ -106,7 +106,7 @@ export default async function ProjectDetailPage({ params }: { params: { id: stri
           {project.projectUrl && (
             <Button asChild variant="secondary" className="font-inter">
               <a href={project.projectUrl} target="_blank" rel="noopener noreferrer">
-                Visit Project <ExternalLink className="ml-2 h-4 w-4" />
+                Witness the "Live" Version <ExternalLink className="ml-2 h-4 w-4" />
               </a>
             </Button>
           )}
@@ -115,55 +115,55 @@ export default async function ProjectDetailPage({ params }: { params: { id: stri
         <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg mb-10">
           <Image
             src={project.imageUrl}
-            alt={`Main image for ${project.title}`}
+            alt={`Alleged image for ${project.title}`}
             layout="fill"
             objectFit="cover"
             priority
-            data-ai-hint="technology project"
+            data-ai-hint="technology project disaster"
           />
         </div>
         
         <div className="grid md:grid-cols-3 gap-8 mb-10">
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium font-inter">Client</CardTitle>
+              <CardTitle className="text-sm font-medium font-inter">"Client"</CardTitle>
               <Users className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold font-lora">{project.client || 'N/A'}</div>
+              <div className="text-2xl font-bold font-lora">{project.client || 'Victim Name Withheld'}</div>
             </CardContent>
           </Card>
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium font-inter">Completion Date</CardTitle>
+              <CardTitle className="text-sm font-medium font-inter">"Completion" Date</CardTitle>
               <CalendarDays className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold font-lora">{project.date || 'N/A'}</div>
+              <div className="text-2xl font-bold font-lora">{project.date || 'Eventually'}</div>
             </CardContent>
           </Card>
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium font-inter">Technologies</CardTitle>
+              <CardTitle className="text-sm font-medium font-inter">"Technologies"</CardTitle>
               <Settings className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
               <div className="text-sm font-lora text-muted-foreground">
-                {project.technologies?.slice(0,3).join(', ') || 'Key Technologies'}
-                {project.technologies && project.technologies.length > 3 && '...'}
+                {project.technologies?.slice(0,3).join(', ') || 'Random Buzzwords'}
+                {project.technologies && project.technologies.length > 3 && '... and more questionable choices'}
               </div>
             </CardContent>
           </Card>
         </div>
 
         <div className="prose prose-lg max-w-none font-lora mb-10">
-          <h2 className="font-inter text-2xl font-semibold text-foreground mb-4">Project Overview</h2>
+          <h2 className="font-inter text-2xl font-semibold text-foreground mb-4">Project "Overview"</h2>
           <p>{project.longDescription || project.description}</p>
         </div>
 
         {project.technologies && project.technologies.length > 0 && (
             <div className="mb-10">
-                <h3 className="text-xl font-semibold font-inter text-foreground mb-3">Technologies Used</h3>
+                <h3 className="text-xl font-semibold font-inter text-foreground mb-3">Tools of Torture (Allegedly Used)</h3>
                 <div className="flex flex-wrap gap-2">
                     {project.technologies.map(tech => (
                         <Badge key={tech} variant="outline" className="font-inter text-sm">{tech}</Badge>
@@ -174,17 +174,17 @@ export default async function ProjectDetailPage({ params }: { params: { id: stri
 
         {project.images && project.images.length > 0 && (
           <section className="mb-10">
-            <h2 className="text-2xl font-semibold font-inter text-foreground mb-6">Project Gallery</h2>
+            <h2 className="text-2xl font-semibold font-inter text-foreground mb-6">Project "Gallery" (Evidence Locker)</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {project.images.map((imgUrl, index) => (
                 <div key={index} className="relative aspect-video rounded-lg overflow-hidden shadow-md">
                   <Image
                     src={imgUrl}
-                    alt={`${project.title} gallery image ${index + 1}`}
+                    alt={`${project.title} gallery image ${index + 1} (if it loads)`}
                     layout="fill"
                     objectFit="cover"
                     className="hover:scale-105 transition-transform duration-300"
-                    data-ai-hint="design interface"
+                    data-ai-hint="design interface screenshot"
                   />
                 </div>
               ))}

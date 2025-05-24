@@ -6,8 +6,8 @@ import Footer from '@/components/layout/Footer';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'LutySpace - Creative Solutions',
-  description: 'Showcasing innovative projects, software, and media from LutySpace.',
+  title: 'Luty-Web - Dumb Solutions',
+  description: 'A dismal collection of questionable projects, barely functional software, and time-wasting media from Luty-Web.',
 };
 
 export default function RootLayout({

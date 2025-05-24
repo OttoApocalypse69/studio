@@ -28,7 +28,7 @@ export default function Navbar() {
           {/* Logo/Brand */}
           <Link href="/" className="flex items-center space-x-2">
             <Feather className="h-8 w-8 text-primary" />
-            <span className="text-2xl font-bold font-inter text-foreground">LutySpace</span>
+            <span className="text-2xl font-bold font-inter text-foreground">Luty-Web</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -67,7 +67,7 @@ export default function Navbar() {
                 <div className="flex flex-col space-y-6">
                   <Link href="/" className="flex items-center space-x-2 mb-6" onClick={() => setMobileMenuOpen(false)}>
                     <Feather className="h-8 w-8 text-primary" />
-                    <span className="text-2xl font-bold font-inter text-foreground">LutySpace</span>
+                    <span className="text-2xl font-bold font-inter text-foreground">Luty-Web</span>
                   </Link>
                   {navItems.map((item) => (
                     <Link

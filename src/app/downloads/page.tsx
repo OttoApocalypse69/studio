@@ -8,8 +8,8 @@ import Image from 'next/image';
 const mockSoftware: Software[] = [
   {
     id: 'sw-luty-suite',
-    name: 'Luty Productivity Suite',
-    description: 'A comprehensive suite of tools to boost your daily productivity and streamline workflows.',
+    name: 'Luty "Productivity" Suite',
+    description: 'A collection of "tools" that might occasionally not crash. "Productivity" and "streamline" are used loosely here.',
     downloadUrl: '#', // Replace with actual download link
     iconUrl: 'https://placehold.co/128x128/2E3192/FFFFFF.png?text=LS',
     platform: 'Windows, macOS, Linux',
@@ -18,8 +18,8 @@ const mockSoftware: Software[] = [
   },
   {
     id: 'sw-photon-editor',
-    name: 'Photon Image Editor',
-    description: 'Powerful yet intuitive image editing software for professionals and hobbyists alike.',
+    name: 'Photon "Image" Mangler',
+    description: '"Powerful"? "Intuitive"? We just strung some code together. It makes pixels change. Sometimes.',
     downloadUrl: '#',
     iconUrl: 'https://placehold.co/128x128/8E44AD/FFFFFF.png?text=PE',
     platform: 'Windows, macOS',
@@ -28,8 +28,8 @@ const mockSoftware: Software[] = [
   },
   {
     id: 'sw-connect-vpn',
-    name: 'Connect Secure VPN',
-    description: 'Ensure your online privacy and security with our high-speed VPN service.',
+    name: 'Connect "Secure-ish" VPN',
+    description: 'Our VPN. It connects... usually. Privacy and security are nice concepts we read about once.',
     downloadUrl: '#',
     iconUrl: 'https://placehold.co/128x128/555555/FFFFFF.png?text=CV',
     platform: 'Windows, macOS, Android, iOS',
@@ -52,9 +52,9 @@ export default function DownloadsPage() {
   return (
     <div className="space-y-12">
       <section className="text-center">
-        <h1 className="text-4xl md:text-5xl font-bold font-inter text-primary mb-4">Software Downloads</h1>
+        <h1 className="text-4xl md:text-5xl font-bold font-inter text-primary mb-4">Downloads (At Your Own Peril)</h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Get the latest versions of our powerful and innovative software applications.
+          Behold, our software "creations". They might work. They might also summon a minor demon. Good luck.
         </p>
       </section>
 
@@ -86,13 +86,13 @@ export default function DownloadsPage() {
                 <CardContent className="flex-grow">
                   <CardDescription>{software.description}</CardDescription>
                   {software.releaseDate && (
-                    <p className="text-xs text-muted-foreground mt-2">Released: {software.releaseDate}</p>
+                    <p className="text-xs text-muted-foreground mt-2">Unleashed: {software.releaseDate}</p>
                   )}
                 </CardContent>
                 <CardFooter>
                   <Button asChild className="w-full md:w-auto font-inter">
                     <a href={software.downloadUrl} target="_blank" rel="noopener noreferrer">
-                      <Download className="mr-2 h-4 w-4" /> Download
+                      <Download className="mr-2 h-4 w-4" /> Download (If You Must)
                     </a>
                   </Button>
                 </CardFooter>

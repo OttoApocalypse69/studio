@@ -40,8 +40,8 @@ export default function ContactPage() {
   function onSubmit(values: z.infer<typeof contactFormSchema>) {
     console.log(values);
     toast({
-      title: 'Message Sent (Simulated)',
-      description: "Thanks for reaching out! We'll get back to you soon.",
+      title: 'Message "Sent" (Probably Lost)',
+      description: "Thanks for... whatever that was. We'll pretend to look at it.",
     });
     form.reset();
   }
@@ -49,16 +49,16 @@ export default function ContactPage() {
   return (
     <div className="space-y-12">
       <section className="text-center">
-        <h1 className="text-4xl md:text-5xl font-bold font-inter text-primary mb-4">Get In Touch</h1>
+        <h1 className="text-4xl md:text-5xl font-bold font-inter text-primary mb-4">Vent Your Frustrations</h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Have a question, project idea, or just want to say hello? We&apos;d love to hear from you.
+          Got a complaint? A terrible idea? Or just want to scream into the void? This is the place. We might even read it. No promises.
         </p>
       </section>
 
       <section className="max-w-2xl mx-auto">
         <Card className="shadow-xl">
           <CardHeader>
-            <CardTitle className="font-inter text-2xl text-center">Send us a Message</CardTitle>
+            <CardTitle className="font-inter text-2xl text-center">Submit Your Grievances</CardTitle>
           </CardHeader>
           <CardContent>
             <Form {...form}>
@@ -72,7 +72,7 @@ export default function ContactPage() {
                       <div className="relative">
                         <User className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
                         <FormControl>
-                          <Input placeholder="Your Name" {...field} className="pl-10 font-lora" />
+                          <Input placeholder="Your Name (or Alias)" {...field} className="pl-10 font-lora" />
                         </FormControl>
                       </div>
                       <FormMessage />
@@ -88,7 +88,7 @@ export default function ContactPage() {
                       <div className="relative">
                         <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
                         <FormControl>
-                          <Input placeholder="your.email@example.com" {...field} className="pl-10 font-lora" />
+                          <Input placeholder="your.misery@example.com" {...field} className="pl-10 font-lora" />
                         </FormControl>
                       </div>
                       <FormMessage />
@@ -100,11 +100,11 @@ export default function ContactPage() {
                   name="subject"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-inter">Subject</FormLabel>
+                      <FormLabel className="font-inter">Subject of Complaint</FormLabel>
                       <div className="relative">
                         <MessageSquare className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
                         <FormControl>
-                          <Input placeholder="Regarding..." {...field} className="pl-10 font-lora" />
+                          <Input placeholder="Regarding your general incompetence..." {...field} className="pl-10 font-lora" />
                         </FormControl>
                       </div>
                       <FormMessage />
@@ -116,10 +116,10 @@ export default function ContactPage() {
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-inter">Message</FormLabel>
+                      <FormLabel className="font-inter">Your Tirade</FormLabel>
                       <FormControl>
                         <Textarea
-                          placeholder="Your message here..."
+                          placeholder="Unleash your dissatisfaction here..."
                           className="resize-y min-h-[120px] font-lora"
                           {...field}
                         />
@@ -129,7 +129,7 @@ export default function ContactPage() {
                   )}
                 />
                 <Button type="submit" className="w-full font-inter text-base py-3">
-                  Send Message <Send className="ml-2 h-4 w-4" />
+                  Launch Complaint <Send className="ml-2 h-4 w-4" />
                 </Button>
               </form>
             </Form>
