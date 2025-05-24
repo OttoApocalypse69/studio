@@ -29,7 +29,7 @@ const mockVideos: YouTubeVideo[] = [
 export default function YouTubePage() {
   return (
     <div className="space-y-12">
-      <section className="text-center">
+      <section className="text-center bg-gradient-to-br from-primary/10 via-background to-accent/10 rounded-xl shadow-lg">
         <h1 className="text-4xl md:text-5xl font-bold font-inter text-primary mb-4">Luty-Web on YouTube</h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
           Our YouTube channel: a digital abyss of questionable content. Subscribe if you enjoy mild bewilderment.

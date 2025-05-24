@@ -56,7 +56,7 @@ const mockProjects: Project[] = [
 export default function ProjectsPage() {
   return (
     <div className="space-y-12">
-      <section className="text-center">
+      <section className="text-center bg-gradient-to-br from-primary/10 via-background to-accent/10 rounded-xl shadow-lg">
         <h1 className="text-4xl md:text-5xl font-bold font-inter text-primary mb-4">Exhibit A: Our "Projects"</h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
           A curated collection of our past endeavors. If you&apos;re looking for &apos;expertise&apos; or &apos;innovation&apos;, you might be in the wrong place.

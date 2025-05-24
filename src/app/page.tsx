@@ -30,7 +30,7 @@ export default function Home() {
 
       {/* Features Overview Section */}
       <section className="py-16">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 bg-gradient-to-br from-primary/10 via-background to-accent/10 rounded-xl shadow-lg">
           <h2 className="text-3xl md:text-4xl font-bold font-inter text-foreground mb-4">What We Subject You To</h2>
           <p className="text-lg text-muted-foreground max-w-xl mx-auto">
             At Luty-Web, we specialize in making people suck.

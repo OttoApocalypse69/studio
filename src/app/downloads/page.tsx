@@ -51,7 +51,7 @@ const PlatformIcon = ({ platform }: { platform: string }) => {
 export default function DownloadsPage() {
   return (
     <div className="space-y-12">
-      <section className="text-center">
+      <section className="text-center bg-gradient-to-br from-primary/10 via-background to-accent/10 rounded-xl shadow-lg">
         <h1 className="text-4xl md:text-5xl font-bold font-inter text-primary mb-4">Downloads (At Your Own Peril)</h1>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
           Behold, our software "creations". They might work. They might also summon a minor demon. Good luck.
