@@ -7,22 +7,19 @@ import { Button } from '@/components/ui/button';
 // Mock data for YouTube videos
 const mockVideos: YouTubeVideo[] = [
   {
-    id: 'dQw4w9WgXcQ', // Example: Rick Astley - Never Gonna Give You Up
-    title: 'Luty-Web "Product" Demo (Viewer Discretion Advised)',
-    description: 'Watch us try to explain what this thing allegedly does. Popcorn not included, probably for the best.',
-    thumbnailUrl: 'https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg',
+    id: 'y8-3i1P9J50',
+    title: 'Our Magnum Opus: A Deep Dive into Nothingness',
+    description: "Ten hours of pure, unadulterated black screen. It's a metaphor for our development process. Or maybe we just forgot to turn the camera on.",
   },
   {
-    id: 'JGwWNGJdvx8', // Example: Creative Commons video
-    title: 'The Unfiltered Chaos: Luty-Web "Behind the Scenes"',
-    description: 'A terrifying glimpse into how the sausage (or lack thereof) is made. You\'ve been warned.',
-    thumbnailUrl: 'https://img.youtube.com/vi/JGwWNGJdvx8/hqdefault.jpg',
+    id: 'Z0DO0sEjO_A',
+    title: 'How It\'s Made: The Luty-Web Server',
+    description: 'An exclusive look at the high-performance machine running our services. The soothing hum is the sound of progress... or impending failure.',
   },
   {
-    id: 'L1QOh-n-D2o', // Example: Another Creative Commons video
-    title: 'Tutorial: Attempting to Navigate LutySuite (Good Luck)',
-    description: 'Follow along as we stumble through our own "productivity" suite. May the odds be ever in your favor.',
-    thumbnailUrl: 'https://img.youtube.com/vi/L1QOh-n-D2o/hqdefault.jpg',
+    id: '39h44b4wARc',
+    title: 'Live Q&A with the Luty-Web CEO',
+    description: 'Our founder answers your burning questions. The excitement is palpable. Please hold your applause until the end.',
   },
 ];
 
@@ -35,7 +32,7 @@ export default function YouTubePage() {
           Our YouTube channel: a digital abyss of questionable content. Subscribe if you enjoy mild bewilderment.
         </p>
         <Button asChild className="font-inter bg-red-600 hover:bg-red-700 text-white">
-            <a href="https://www.youtube.com/@yourchannelname" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
                 <Youtube className="mr-2 h-5 w-5"/> Visit Our Den of Digital Despair
             </a>
         </Button>
