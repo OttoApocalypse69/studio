@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, Lightbulb, Rocket, Target } from "lucide-react";
+import { ArrowRight, Lightbulb, Rocket, Target, MessageSquare } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -17,11 +17,16 @@ export default function Home() {
           <p className="text-lg md:text-xl text-foreground max-w-2xl mx-auto mb-10 animate-fade-in-up">
             Schizo
           </p>
-          <div className="space-x-4 animate-fade-in-up [animation-delay:0.3s]">
+          <div className="flex flex-wrap justify-center gap-4 animate-fade-in-up [animation-delay:0.3s]">
             <Button size="lg" asChild className="font-inter">
               <Link href="/projects">
                 Browse Our Blunders <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
+            </Button>
+            <Button size="lg" asChild className="font-inter" variant="secondary">
+              <a href="https://discord.gg/RTdYYVenKD" target="_blank" rel="noopener noreferrer">
+                Join Our Discord <MessageSquare className="ml-2 h-5 w-5" />
+              </a>
             </Button>
             {/* "Complain Here" Button Removed */}
           </div>
