@@ -1,17 +1,31 @@
+
 import type { Software } from '@/types';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Download, Server, MonitorSmartphone, ExternalLink } from 'lucide-react';
+import { Download, Server, MonitorSmartphone } from 'lucide-react';
 import Image from 'next/image';
 
-// Mock data for software
+// =======================================================================
+// EDIT YOUR SOFTWARE DOWNLOADS HERE
+// To add a new software item, copy one of the objects below and
+// paste it as a new item in the 'mockSoftware' array.
+//
+// - id: A unique identifier for the item (e.g., 'sw-my-app').
+// - name: The name of your software.
+// - description: A brief, sarcastic description.
+// - downloadUrl: The link to the download file (or '#' if none).
+// - iconUrl: A URL for the software icon (e.g., 'https://placehold.co/128x128.png').
+// - platform: The operating systems it runs on (e.g., 'Windows, macOS').
+// - version: The current version number (e.g., '1.0.0').
+// - releaseDate: When it was unleashed upon the world (e.g., '2024-01-01').
+// =======================================================================
 const mockSoftware: Software[] = [
   {
     id: 'sw-luty-suite',
     name: 'Luty "Productivity" Suite',
     description: 'A collection of "tools" that might occasionally not crash. "Productivity" and "streamline" are used loosely here.',
     downloadUrl: '#', // Replace with actual download link
-    iconUrl: 'https://placehold.co/128x128/2E3192/FFFFFF.png?text=LS',
+    iconUrl: 'https://placehold.co/128x128.png',
     platform: 'Windows, macOS, Linux',
     version: '2.5.0',
     releaseDate: '2024-03-15',
@@ -21,7 +35,7 @@ const mockSoftware: Software[] = [
     name: 'Photon "Image" Mangler',
     description: '"Powerful"? "Intuitive"? We just strung some code together. It makes pixels change. Sometimes.',
     downloadUrl: '#',
-    iconUrl: 'https://placehold.co/128x128/8E44AD/FFFFFF.png?text=PE',
+    iconUrl: 'https://placehold.co/128x128.png',
     platform: 'Windows, macOS',
     version: '1.8.2',
     releaseDate: '2023-12-01',
@@ -31,7 +45,7 @@ const mockSoftware: Software[] = [
     name: 'Connect "Secure-ish" VPN',
     description: 'Our VPN. It connects... usually. Privacy and security are nice concepts we read about once.',
     downloadUrl: '#',
-    iconUrl: 'https://placehold.co/128x128/555555/FFFFFF.png?text=CV',
+    iconUrl: 'https://placehold.co/128x128.png',
     platform: 'Windows, macOS, Android, iOS',
     version: '3.1.5',
     releaseDate: '2024-02-20',
