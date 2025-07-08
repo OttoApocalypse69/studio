@@ -4,22 +4,23 @@ import { PlayCircle, Youtube } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
-// Mock data for YouTube videos
+// Mock data for YouTube videos - REPLACE THESE WITH YOUR VIDEOS
+// The 'id' is the part of the YouTube URL after 'v='. For example, in 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', the ID is 'dQw4w9WgXcQ'.
 const mockVideos: YouTubeVideo[] = [
   {
-    id: 'y8-3i1P9J50',
-    title: 'Our Magnum Opus: A Deep Dive into Nothingness',
-    description: "Ten hours of pure, unadulterated black screen. It's a metaphor for our development process. Or maybe we just forgot to turn the camera on.",
+    id: 'your-video-id-1',
+    title: 'Your First Awesome Video Title',
+    description: "Replace this with your video's description. It's a good idea to keep it brief and engaging here.",
   },
   {
-    id: 'Z0DO0sEjO_A',
-    title: 'How It\'s Made: The Luty-Web Server',
-    description: 'An exclusive look at the high-performance machine running our services. The soothing hum is the sound of progress... or impending failure.',
+    id: 'your-video-id-2',
+    title: 'Another Masterpiece',
+    description: "Don't forget to replace this one too! Your viewers are waiting.",
   },
   {
-    id: '39h44b4wARc',
-    title: 'Live Q&A with the Luty-Web CEO',
-    description: 'Our founder answers your burning questions. The excitement is palpable. Please hold your applause until the end.',
+    id: 'your-video-id-3',
+    title: 'The Grand Finale (or just another video)',
+    description: 'You know the drill. Swap this out with your actual content.',
   },
 ];
 
@@ -32,7 +33,7 @@ export default function YouTubePage() {
           Our YouTube channel: a digital abyss of questionable content. Subscribe if you enjoy mild bewilderment.
         </p>
         <Button asChild className="font-inter bg-red-600 hover:bg-red-700 text-white">
-            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.youtube.com/@UnknownCyberiaink" target="_blank" rel="noopener noreferrer">
                 <Youtube className="mr-2 h-5 w-5"/> Visit Our Den of Digital Despair
             </a>
         </Button>
